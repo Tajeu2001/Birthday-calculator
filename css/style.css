@@ -18,8 +18,22 @@ h2{
   text-decoration: underline;
 }
 
-label, .submit {
-  display:block;
+form {
+  text-align: center;
 }
+
+label {
+  display:block;
+  margin-top: ;
+}
+
+.submit {
+  text-align: center;
+  display: block;
+  margin-left:530px;
+  margin-top: 30px;
+  background-color: #F65058FF;
+}
+
 
 
