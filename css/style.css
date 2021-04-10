@@ -1,9 +1,25 @@
 body {
   background-color: #28334AFF;
+  color:white;
 }
 
 .jumbotron {
   text-align: center;
   background-color: #F65058FF;
-  color: white;
+  color: #28334AFF;
 }
+
+h1 {
+  font-size: 60px;
+}
+
+h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+label, .submit {
+  display:block;
+}
+
+
