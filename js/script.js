@@ -32,11 +32,11 @@ btn.addEventListener("click",(date,month,year)=> {
     alert("Please provide year!");
   }
 })
-/*
+
 var days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
 var femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 var maleNames = ["Kwasi","kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-
+/*
 var day = birthday.getDay();
 console.log(day);
 var feNa = femaleNames[console.log(day)];
