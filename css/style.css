@@ -15,7 +15,7 @@ h1 {
 
 h2{
   text-align: center;
-  text-decoration: underline;
+  color:yellow;
 }
 
 form {
@@ -24,15 +24,19 @@ form {
 
 label {
   display:block;
-  margin-top: ;
 }
 
-.submit {
+#submit {
   text-align: center;
   display: block;
-  margin-left:530px;
-  margin-top: 30px;
+  margin-left:47%;
+  margin-top: 50px;
   background-color: #F65058FF;
+}
+
+h5 {
+  color:yellow;
+  margin-top:50px;
 }
 
 
