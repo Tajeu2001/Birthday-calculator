@@ -7,14 +7,14 @@ let showName = document.getElementById("show-name");
 let btn = document.getElementById("submit");
 
 
-/*var birthday = new Date(monthB +"-"+ dateB+"-"+ yearB);
+var birthday = new Date(monthB +"-"+ dateB+"-"+ yearB);
   console.log(birthday);
 let d = birthday.getDate();
 let m = birthday.getMonth();
 let y = birthday.getYear();
 let c = centuryFromYear("yearB")
 console.log(c);
-var form = document.getElementById("form");
+/*var form = document.getElementById("form");
 
 btn.addEventListener("click",(date,month,year)=> {
   let dateB = document.getElementById("date").value;
