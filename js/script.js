@@ -21,7 +21,7 @@ btn.addEventListener("click",(date,month,year)=> {
   date = dateB.value;
   console.log(date);
     month = monthB.value;
-    /*year = yearB.value;
+    year = yearB.value;
   if(dateB.value <="0" || dateB.value >"31") {
     alert("Enter a valid number!");
   }
@@ -32,7 +32,7 @@ btn.addEventListener("click",(date,month,year)=> {
     alert("Please provide year!");
   }
 })
-
+/*
 var days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
 var femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 var maleNames = ["Kwasi","kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
