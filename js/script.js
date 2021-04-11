@@ -14,14 +14,14 @@ let m = birthday.getMonth();
 let y = birthday.getYear();
 let c = centuryFromYear("yearB")
 console.log(c);
-/*var form = document.getElementById("form");
+var form = document.getElementById("form");
 
 btn.addEventListener("click",(date,month,year)=> {
   let dateB = document.getElementById("date").value;
   date = dateB.value;
   console.log(date);
     month = monthB.value;
-    year = yearB.value;
+    /*year = yearB.value;
   if(dateB.value <="0" || dateB.value >"31") {
     alert("Enter a valid number!");
   }
