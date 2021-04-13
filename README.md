@@ -19,6 +19,7 @@ This project is about  creating an application ,that lets you know the day of th
 *JavaScript
 ## Link to live site
  https://tajeu2001.github.io/Birthday-calculator/
+
 ## Contact details
 Email: tajeusanta7@gmail.com
 ### License
