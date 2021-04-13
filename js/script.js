@@ -1,50 +1,23 @@
-let dateB = document.getElementById("date").value;
-let monthB =document.getElementById("month").value;
-let yearB = document.getElementById("year").value;
+function getDayBorn() {
+  alert("Hi there! We'll start by providing the day born. Click ok to continue"); 
+  let dateString = prompt("Enter date born in the following format: mm/dd/yyyy"); 
+  let gender = prompt("What is your gender, female or male?"); 
+  document.getElementById('displayNameHere').innerHTML = "Your Akan Name is " + getNameFromDate(dateString, gender);
+}
 
-let showName = document.getElementById("show-name");
-
-let btn = document.getElementById("submit");
-
-
-var birthday = new Date(monthB +"-"+ dateB+"-"+ yearB);
-  console.log(birthday);
-let d = birthday.getDate();
-let m = birthday.getMonth();
-let y = birthday.getYear();
-let c = centuryFromYear("yearB")
-console.log(c);
-var form = document.getElementById("form");
-
-btn.addEventListener("click",(date,month,year)=> {
-  let dateB = document.getElementById("date").value;
-  date = dateB.value;
-  console.log(date);
-    month = monthB.value;
-    year = yearB.value;
-  if(dateB.value <="0" || dateB.value >"31") {
-    alert("Enter a valid number!");
+function getNameFromDate(dateString,gender) {
+  let dateOfBirth = new Date(dateString); 
+  let dayOfTheWeek = dateOfBirth.getDay();
+  let akanMale = ["Kwasi","kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+  let akanFemale = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+  if(gender == "male"){
+    return akanMale[dayOfTheWeek];
   }
-  if(monthB.value <="0" || monthB.value> "12") {
-    alert("Enter a valid number!");
+  else if(gender == "female"){
+  return akanFemale[dayOfTheWeek];
   }
-  if(yearB.value=="") {
-    alert("Please provide year!");
+  else {
+    return "Error generating birth name!";
   }
-})
-
-var days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
-var femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-var maleNames = ["Kwasi","kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-/*
-var day = birthday.getDay();
-console.log(day);
-var feNa = femaleNames[console.log(day)];
-  
-var maNa = maleNames[console.log(day)];*/
-
-
-
-
-
+}
 
