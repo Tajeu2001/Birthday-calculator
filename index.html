@@ -6,19 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script  src="js/script.js"></script>
   <title>Akan Names</title>
 </head>
 <body>
   <div class=container>
     <div class=jumbotron>
-      <h1>Akan Name Calculator</h1>
+      <h1>Akan Name Generator</h1>
     </div>
     <h2>What the application does</h2>
-    <p>The Akan Names calculator is a very fun app where anyone can find out which is the exact day they were born! To get to know this powerful information one has to fill in a form that requires the birth date and year,plus the gender.When the user clicks the submit button,they get to find out their born day of the week in a very fun way.The user is given a Ghanian cultural name,called <strong>"Akan name"</strong> according to the day of the week they were born.    </p>
-      <button id="submit" onclick="getDayBorn()" >submit</button>
-      <p><span id="displayNameHere"></span></p>
+    <p>The Akan Names generator is a very fun app where anyone can find out which is the exact day they were born! To get to know this powerful information one has to fill in a form that requires the birth date and year,plus the gender.When the user clicks the submit button,they get to find out their born day of the week in a very fun way.The user is given a Ghanian cultural name,called <strong>"Akan name"</strong> according to the day of the week they were born.    </p>
+    <form class="form">
+      <h3>Enter your birthday:</h3>
+      <input type="date" name="date" id="date" placeholder="mm/dd/yyyy" ><br>
+      <div id="gender">
+        <input type="radio" name="gender" id="male" value="male"> Male<br>
+        <input type="radio" name="gender" id="female" value="female"> Female
+      </div>  
+      <button id="submit" type="button" >submit</button>
+    </form>  
+      <p id="displayNameHere"></p>
     
   </div>  
-  <script  src="js/script.js"></script>
 </body>
 </html>
