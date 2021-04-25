@@ -14,14 +14,14 @@ $(document).ready(function(){
 
   let dayOfTheWeek = parseInt(dateString.getDay());
 
-  if(gender = male){
-    document.getElementById("displayNameHere").innerHTML= "Your Akan name is " + akanMale[dayOfTheWeek] ;
+   if(gender == "male"){
+    document.getElementById("displayNameHere").innerHTML="Your Akan name is"+ " "+  akanMale[dayOfTheWeek];
   } 
 
-  if(gender = female){
-    document.getElementById("displayNameHere").innerHTML= "Your Akan name is " + akanFemale[dayOfTheWeek] ;
+    else if (gender== "female") {
+      document.getElementById("displayNameHere").innerHTML="Your Akan name is " + akanFemale[dayOfTheWeek];
   } 
-
+  
 
   e.preventDefault();
   });
