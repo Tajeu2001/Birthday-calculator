@@ -26,6 +26,14 @@ label {
   display:block;
 }
 
+#date {
+  margin-top: 10px;
+}
+
+#gender {
+  margin-top: 10px;
+}
+
 #submit {
   text-align: center;
   display: block;
@@ -37,6 +45,11 @@ label {
 h5 {
   color:yellow;
   margin-top:50px;
+}
+
+#displayNameHere {
+  text-align: center;
+  margin-top: 30px;
 }
 
 
