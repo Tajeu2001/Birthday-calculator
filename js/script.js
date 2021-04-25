@@ -1,23 +1,31 @@
-function getDayBorn() {
-  alert("Hi there! We'll start by providing the day born. Click ok to continue"); 
-  let dateString = prompt("Enter date born in the following format: mm/dd/yyyy"); 
-  let gender = prompt("What is your gender, female or male?"); 
-  document.getElementById('displayNameHere').innerHTML = "Your Akan Name is " + getNameFromDate(dateString, gender);
-}
+let akanMale = ["Kwasi","kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+let akanFemale = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
-function getNameFromDate(dateString,gender) {
-  let dateOfBirth = new Date(dateString); 
-  let dayOfTheWeek = dateOfBirth.getDay();
-  let akanMale = ["Kwasi","kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-  let akanFemale = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-  if(gender == "male"){
-    return akanMale[dayOfTheWeek];
-  }
-  else if(gender == "female"){
-  return akanFemale[dayOfTheWeek];
-  }
-  else {
-    return "Error generating birth name!";
-  }
-}
+let dateString
+let dateOfBirth 
+let year
+let gender
 
+$(document).ready(function(){
+  $("#submit").click(function(e){
+
+  gender = $("form input[name='gender']:checked").val();
+  dateString = new Date($("form input[name='date']").val());
+
+  let dayOfTheWeek = parseInt(dateString.getDay());
+
+  if(gender = male){
+    document.getElementById("displayNameHere").innerHTML= "Your Akan name is " + akanMale[dayOfTheWeek] ;
+  } 
+
+  if(gender = female){
+    document.getElementById("displayNameHere").innerHTML= "Your Akan name is " + akanFemale[dayOfTheWeek] ;
+  } 
+
+
+  e.preventDefault();
+  });
+}); 
+
+
+  
